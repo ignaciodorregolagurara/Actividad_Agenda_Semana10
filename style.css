@@ -5,74 +5,162 @@ body {
 
 h1 {
     text-align: center;
-    text-decoration: underline;
+    text-transform: uppercase;
     margin: 2rem 0 3rem 0;
 }
 
 form {
     display: grid;
+}
+
+/* AUXILIARES */
+
+.AUX_MarginBottom {
     margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-    form  {
-        grid-template-columns: 40% 60%;
-        width: 100%;
-    }
+.AUX_MarginTop {
+    margin-top: 1rem;
+}
+
+/* */
+
+.datos__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .item_form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.item_form > input {
-    width: 90%;
-    height: 2rem;
+.item_form label {
+    margin-bottom: 0.5rem;
 }
 
-.item_form > label {
-    font-size: 1.1rem;
-    padding: 1rem 0;
-    font-weight: bold;
+.item_form input {
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+}
+
+.item_nom {
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
-    .item_form {
-        padding-left: 1rem;
-        justify-content: left;
-        align-items: baseline;
+    .datos__formulario {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .item_form > label {
-        font-size: 1rem;
-        text-align: left;
+    .item_form {
+        width: 45%;
+    }
+
+    .item_nom {
+        margin-bottom: 0;
     }
 }
+
+/* */
+/*
+.buscador__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buscador__formulario label {
+    margin-bottom: 0.5rem;
+}
+
+.buscador__formulario input {
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+}
+*/
+
+/* */
+
+.uso__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.uso__formulario input {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin: 0 auto 1rem auto;
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+    .uso__formulario {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .uso__formulario input {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .uso__formulario input {
+        width: 30%;
+    }
+}
+
+/* CONTENEDOR DE CONTACTOS */
 
 .contenedor {
-    height: 25rem;
+    border: 1px solid #000000;
+    height: 500px;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid #000;
+    overflow-y: auto;
 }
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* */
 
 /* ESTILO PARA EL BOTON QUE CREAMOS EN EL JS*/
 
-.estiloContacto {
+.contacto {
     display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+    flex-direction: column;
+    text-align: center;
     font-size: 1rem;
 }
 
-.estiloContacto > button {
-    height: 2rem;
-    width: 5rem;
+.contacto p > span {
+    font-weight: bold;
 }
 
+@media (min-width: 900px) {
+    .contacto {
+        display: grid;
+        grid-template-columns: 40% 20% 20% 20%; 
+    }
+}
 /* */
 
 

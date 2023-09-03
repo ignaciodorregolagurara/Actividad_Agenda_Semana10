@@ -12,29 +12,28 @@
 
     <form>
         <section class="datos__formulario">
-            <div class="item_form">
+            <div class="item_form item_nom">
                 <label for="nom">Agende su Nombre: </label>
                 <input id="nom" name="nom" type="text" placeholder="Nombre"> 
             </div>
-            <div class="item_form">
+            <div class="item_form item_cel">
                 <label for="cel">Agende su Celular: </label>
                 <input id="cel" name="cel" type="text" placeholder="Celular">
             </div>
-            <div class="item_form">
-                <label for="contacto">Busque su contacto a continuacion: </label>
-                <input id="btnBuscar" type="search" placeholder="Ingrese su Contacto">
-            </div>
         </section>
-        <ul id="lista" class="contenedor"></ul>
+        <!--<section class="buscador__formulario">
+            <label for="buscador">Busque su contacto a continuacion: </label>
+            <input id="buscador" type="search" placeholder="Ingrese su Contacto">
+        </section>-->
     </form>
 
     
     <section class="uso__formulario">
         <input type="submit" id="btnAgregar" class="boton" value="Agregar"> 
         <input type="submit" id="btnMostrar" class="boton" value="Mostrar contactos">
-        <input type="submit" id="btnEliminar" class="boton" value="Eliminar">
-        <input type="submit" id="btnModificar" class="boton" value="Modificar">
     </section>
+
+    <div id="lista" class="contenedor"></div>
 
     <script src="script.js"></script>
 </body>
