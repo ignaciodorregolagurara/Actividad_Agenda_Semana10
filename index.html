@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contactos</title>
+</head>
+<body>
+
+    <h1>Agende su contacto aqui!!</h1>
+
+    <form>
+        <section class="datos__formulario">
+            <div class="item_form">
+                <label for="nom">Agende su Nombre: </label>
+                <input id="nom" name="nom" type="text" placeholder="Nombre"> 
+            </div>
+            <div class="item_form">
+                <label for="cel">Agende su Celular: </label>
+                <input id="cel" name="cel" type="text" placeholder="Celular">
+            </div>
+            <div class="item_form">
+                <label for="contacto">Busque su contacto a continuacion: </label>
+                <input id="btnBuscar" type="search" placeholder="Ingrese su Contacto">
+            </div>
+        </section>
+        <ul id="lista" class="contenedor"></ul>
+    </form>
+
+    
+    <section class="uso__formulario">
+        <input type="submit" id="btnAgregar" class="boton" value="Agregar"> 
+        <input type="submit" id="btnMostrar" class="boton" value="Mostrar contactos">
+        <input type="submit" id="btnEliminar" class="boton" value="Eliminar">
+        <input type="submit" id="btnModificar" class="boton" value="Modificar">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
